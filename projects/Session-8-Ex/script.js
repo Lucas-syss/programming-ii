@@ -26,7 +26,7 @@ function knapsack(items, capacity) {
     }
  
     let w = capacity;
-    let usedItems = [];
+    const usedItems = [];
     for (let i = items.length - 1; i >= 0; i--) {
         if (itemSelection[i] && w >= items[i].weight) {
             usedItems.push(items[i]);
