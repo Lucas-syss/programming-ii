@@ -1,0 +1,26 @@
+console.log(hoistedVar); 
+var hoistedVar = "I'm hoisted!";
+
+// The first output will be "undefined", while the var "hoistedVar" is still read and doesn't return an error, it's value is only assigned to it after it's called.
+// Challenge answer: Changing "var hoisted" to "let hoisted" or "const", will instead of outputting "undefined", return a ReferenceError, saying it can't access the it before being initialized, different from using var which would output something, even though it's not the wanted value assigned later. 
+
+
+notHoistedFunc();
+var notHoistedFunc = () => console.log("I won't work");
+
+// These lines of code simply won't work and return the error, TypeError "notHoistedFunc is not a function", while hoisting functions normally works, arrow functions are an exception.
+// Challenge answer: Again this code wouldn't work with the usual "var" and output a TypeError, but changing it to "let" or "const" will instead return a ReferenceError saying the function can't be accessed before being initialized. 
+
+
+hoistedFunc(); // Output: "I work!"
+function hoistedFunc() {
+  console.log("I work!");
+}
+
+// This will work as we're "hoisting" a normal function which is acceptable, and will return "I work!" in the console.
+
+fn();
+var fn = function hoistedFunc() { console.log("I work!"); }
+
+// Challenge answer : Trying to hoist a normal function by storing it in "var fn" and call it before it's initialized will result in a TypeError, saying it isn't a function.
+// Now changing it to "let" or "const" will both yield the same result, the result being a ReferenceError, saying it can't access the function before it's initialization.
