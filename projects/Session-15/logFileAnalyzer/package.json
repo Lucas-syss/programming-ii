@@ -1,0 +1,17 @@
+{
+  "name": "logfileanalyzer",
+  "version": "0.1.0",
+  "description": "file analyzer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "log",
+    "files",
+    "analyze"
+  ],
+  "author": "Lucas Cleminson <lucas_cleminon@eticalgarve.com>",
+  "license": "MIT"
+}
