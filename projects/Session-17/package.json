@@ -1,0 +1,16 @@
+{
+  "name": "todo-list",
+  "version": "0.1.0",
+  "description": "to do list",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "--test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^12.4.2",
+    "winston": "^3.17.0"
+  }
+}
