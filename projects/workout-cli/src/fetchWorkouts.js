@@ -20,7 +20,7 @@ export const fetchExercises = async (muscleId, equipmentId) => {
 
     return response.data.results;
   } catch (error) {
-    console.error(chalk.red('Error fetching workouts:', error.message));
+    console.error(chalk.red('Error fetching workouts:', error.message)); 
     process.exit(1);
   }
 };
