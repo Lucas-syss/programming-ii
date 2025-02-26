@@ -9,7 +9,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
 const muscles = JSON.parse(fs.readFileSync(path.join(__dirname, 'muscles.json')));
 const equipment = JSON.parse(fs.readFileSync(path.join(__dirname, 'equipment.json')));
 
-
+ 
 const DIFFICULTY_LEVELS = {
     beginner: {
       name: '🏋️ Beginner',
@@ -132,13 +132,13 @@ const generateWorkout = async () => {
     const exercises = await fetchExercises(answers.muscle, answers.equipment);
     displayWorkout(answers, exercises);
 };
-
+ 
 // Move displayWorkout outside of generateWorkout
 const displayWorkout = (options, exercises) => {
     const { difficulty } = options;
     const [minReps, maxReps] = difficulty.repRange;
-    
-    console.log(chalk.blue.bold(`\n🔧 ${muscles[options.muscle]} Workout (${equipment[options.equipment]})`));
+     
+    console.log(chalk.blue.bold(`\n🔧 ${muscles[options.muscle]} Workout (${equipment[options.equipment]})`)); 
     console.log(chalk.blue.bold(`🏋️ Training Plan: ${DIFFICULTY_LEVELS[difficulty.key].name}`));
     console.log(chalk.blue('-'.repeat(50)));
     
