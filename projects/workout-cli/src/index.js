@@ -20,7 +20,7 @@ const DIFFICULTY_LEVELS = {
         focus: 'Full-body endurance',
         tips: ['Focus on form', 'Controlled tempo']
       }
-    },
+    }, 
     intermediate: {
       name: '💪 Intermediate',
       params: {
