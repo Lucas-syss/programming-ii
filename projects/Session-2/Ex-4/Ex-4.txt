@@ -1,0 +1,2 @@
+In Big O notation, we only care about the biggest factor that affects how fast a program runs. 
+Small numbers and extra terms don’t matter, because they dont change the overall growth as the input gets larger.

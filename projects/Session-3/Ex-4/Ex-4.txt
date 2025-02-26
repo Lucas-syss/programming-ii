@@ -1,0 +1,3 @@
+When the Fibonacci function runs, it keeps calling itself twice for each number. 
+As n gets bigger, the number of calls doubles each time. 
+This makes the function take exponentially more time to finish.

@@ -1,0 +1,2 @@
+Sessao 2
+Thhis code runs in O(n²). 
