@@ -86,8 +86,8 @@ const mainMenu = async () => {
     await mainMenu();
 };
 
-// Help information
-const showHelp = () => {
+// Help information 
+const showHelp = () => { 
     console.log(chalk.yellow.bold('\nWorkout CLI Help:'));
     console.log(`
   This tool helps you generate personalized workout routines using the wger API.
